@@ -1,5 +1,5 @@
 from flask import Flask
-from conexion import get_connection
+from modelo.conexion import get_connection
 
 app = Flask(__name__)
 
