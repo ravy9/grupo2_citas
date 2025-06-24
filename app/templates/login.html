@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Citas Médicas - Iniciar Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form method="POST">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="flash-data" data-message="{{ get_flashed_messages()[0] if get_flashed_messages() }}"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
