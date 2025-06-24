@@ -5,5 +5,5 @@ db_config = {
     'user': 'postgres',
     'password': 'rafael1517',
     'dbname': 'gestion_citas_db',
-    'port': 5432  # por defecto en PostgreSQL
+    'port': 5432
 }
